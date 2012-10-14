@@ -883,7 +883,7 @@ def wood(self, blockid, data):
     elif wood_orientation == 8: # north-south orientation
         return self.build_full_block(side, None, None, side.rotate(270), top)
 
-@material(blockid=18, data=range(16), transparent=True, solid=True)
+@material(blockid=18, data=range(16), transparent=True, solid=True, nospawn=True)
 def leaves(self, blockid, data):
     # mask out the bits 4 and 8
     # they are used for player placed and check-for-decay blocks
